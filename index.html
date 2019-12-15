@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Gusti Leather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Are you looking for leather products of the best quality? Gusti Leather is a Company for you. It's handmade leather products will move your heart.">
+    <meta name=”keywords” content=”leather,home,products”>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <a href="index.html"><img src="IMAGES/logo3.png" class="logo" alt="logo"></a>
+            <a href="SUBPAGES/products.html">Products</a>
+            <a href="SUBPAGES/about.html">About Gusti Leather</a>
+            <a href="SUBPAGES/contact.html">Contact</a>
+            <a href="https://www.gusti-leather.co.uk/">Shop</a>
+        </div>
+    </nav>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <main>
+        <div class="upper_logo">
+            <a href="index.html"><img src="IMAGES/logo2.png" class="logo" alt="logo"></a>
+        </div>
+        <div class="content">
+            <h1 class="pagetitle">Gusti Leather creates fully handmade leather products of the best quality and greatest details. </h1>
+            <p class="descript"> As a company started by only one family, it achieved a huge succes and got a high place on leather products market. It's highly recommended because of long-term quality, all the products can be used for ages and all are unique. </p>
+            <img src="IMAGES/H19_haupr-handtasche-leder_600x600.jpg" class="bag" alt="Bag">
+            <img src="IMAGES/2A147-33-1_haupt-schlusseltasche-leder2.jpg" class="bagright" alt="Bag">
+            <h1 class="pagetitleleft">Gusti Leather products focus on practicality and quality. </h1>
+            <p class="descriptempty"> All the products are made in certificated factories, where they are prepeared to being used for years. Whole company follows ecological phylosophy of production. </p>
+            <img src="IMAGES/bagmain-01-01.png" class="bagtwo" alt="Bag">
+
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <p class="icon_text"> Gusti Leather is placed in two countrie but it is transporting its products all over the world by local workers .</p>
+                <img id="hands" alt="hands_icon" src="IMAGES/366-3666084_hands-protect-world-comments-hands-world-icon.png">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <p class="icon_text">Gusti Leather follows rules of ecological production without using chemicals. All of the products are hand-made.</p>
+                <img id="plant" alt="plant_icon" src="IMAGES/environment-icon-png-1.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <img src="IMAGES/logo3.png" class="logo_footer" alt="logo_footer">
+            <p class="email">E-Mail: info@gusti-leder.de</p>
+        </div>
+
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body></html>
