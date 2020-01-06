@@ -34,7 +34,7 @@
         <div class="upper_logo">
            <a href="../index.html"><img src="../IMAGES/logo2.png" class="logo" alt="logo"></a>
         </div>
-        <div class="content">
+        <div class="content detailsbag">
            <h1 class="pagetitlecontact">Products</h1>
             <h1 class="pagetitle">Gusti Leather creates fully handmade leather products. Here you can check some of them. </h1>
             <!-- Control buttons -->
@@ -48,24 +48,30 @@
 
             <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
             <div class="container">
-                <div class="filterDiv bags one">Max</div>
-                <div class="filterDiv bags two">Cecilia</div>
-                <div class="filterDiv luggage six">Harvey</div>
-                <div class="filterDiv bags three">Maola</div>
-                <div class="filterDiv stationery fourth">Carson</div>
-                <div class="filterDiv bags four">Finlay</div>
-                <div class="filterDiv luggage five">Duncan</div>
-                <div class="filterDiv luggage seven">Riley</div>
-                <div class="filterDiv luggage eight">Lennox</div>
-                <div class="filterDiv bike nine">Gary F.</div>
-                <div class="filterDiv bike ten">Bernard H.</div>
-                <div class="filterDiv bike eleven">Tony M.</div>
-                <div class="filterDiv bike twelve">Raymond P.</div>
-                <div class="filterDiv stationery third">Damara</div>
-                <div class="filterDiv stationery fifth">Strallan</div>
-                <div class="filterDiv stationery sixth">Casper</div>
+                <div class="filterDiv bags hvr-grow one" id="firstbag" onclick="showdetails()">
+                <a href="#popup1" class="btndetails">Max</a></div>
+                <div class="filterDiv bags hvr-grow two"><a href="#popup1" class="btndetails">Cecilia</a></div>
+                <div class="filterDiv luggage hvr-grow six">Harvey</div>
+                <div class="filterDiv bags hvr-grow three">Maola</div>
+                <div class="filterDiv stationery hvr-grow fourth">Carson</div>
+                <div class="filterDiv bags hvr-grow four">Finlay</div>
+                <div class="filterDiv luggage hvr-grow five">Duncan</div>
+                <div class="filterDiv luggage hvr-grow seven">Riley</div>
+                <div class="filterDiv luggage hvr-grow eight">Lennox</div>
+                <div class="filterDiv bike hvr-grow nine">Gary F.</div>
+                <div class="filterDiv bike hvr-grow ten">Bernard H.</div>
+                <div class="filterDiv bike hvr-grow eleven">Tony M.</div>
+                <div class="filterDiv bike hvr-grow twelve">Raymond P.</div>
+                <div class="filterDiv stationery hvr-grow third">Damara</div>
+                <div class="filterDiv stationery hvr-grow fifth">Strallan</div>
+                <div class="filterDiv stationery hvr-grow sixth">Casper</div>
             </div>
         </div>
+        <div id="popup1" class="popup">
+  <a href="#" class="close">&times;</a>
+           <img src="../IMAGES/U4-haupt_600x600.jpg" alt="Bag details">
+        </div>
+<a href="#" class="close-popup"></a>
     </main>
     <footer class="footer">
         <div class="contact">
@@ -133,6 +139,14 @@
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
             });
+        }
+    </script>
+    <script>
+
+        let firstbag = document.getElementById("firstbag");
+
+        function showdetails(){
+            document.getElementById("aaa").style.opacity = 1;
         }
     </script>
 
