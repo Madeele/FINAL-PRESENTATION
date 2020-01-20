@@ -569,10 +569,11 @@ img {
     padding: 10px 20px;
     transition: background .3s;
     color: black;
+    font-size: 20px;
 }
 
 .btn:hover {
-    background: #00898E;
+    background-color: sandybrown;
 }
 
 .popup {
@@ -659,6 +660,14 @@ img {
     width: 100%;
 }
 
+.closer5 {
+    width: 100%
+}
+
+.closer6 {
+    width: 100%;
+}
+
 .closer4 {
     width: 100%;
 }
@@ -675,7 +684,28 @@ img {
     display: block;
     text-align: center;
     margin-top: 25px;
+}
 
+.button1 {
+    background-color: lightgrey;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-decoration: none;
+    margin: 70px auto 0 auto;
+    font-size: 15px;
+    padding: 20px 16px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    transition: .2s;
+}
+
+.button1:hover {
+    transform: scale(1.05);
 }
 
 /*************Media changing to desktop version*******/
@@ -769,8 +799,28 @@ img {
         line-height: 90px;
     }
 
+    .closer1 {
+        width: 35%;
+    }
+
+    .closer4 {
+        width: 35%;
+        margin-top: -40px;
+    }
+
+    .closer5 {
+        width: 50%;
+        margin-top: -70px;
+    }
+
+    .closer6 {
+        width: 30%;
+        margin-top: -60px;
+    }
+
+
     .closer {
-        width: 40%;
+        width: 50%;
     }
 
     .btn {
@@ -779,13 +829,6 @@ img {
 
     }
 
-    .closer1 {
-        width: 30%;
-    }
-
-    .closer4 {
-        width: 35%;
-    }
 
     #hands {
         width: 12%
@@ -813,6 +856,33 @@ img {
     #arrow {
         width: 5%;
     }
+
+    .detailscontainer {
+        width: 500px;
+        float: right;
+        text-align: center;
+    }
+
+    .btndetails {
+        font-size: 30px;
+    }
+
+    .button1 {
+        background-color: lightgrey;
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        text-decoration: none;
+        margin: 70px auto 0 auto;
+        font-size: 15px;
+        padding: 20px 16px;
+        border-radius: 6px;
+        width: 100px;
+    }
+
 }
 
 .description {
